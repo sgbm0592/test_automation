@@ -11,10 +11,10 @@ class MainHeaderActions(BaseActions):
         super().__init__(driver)
         self._page = page()
 
-    def verify_main_slider(self):
+    def verify_main_title(self):
         assertions.assert_true(self.is_visible(By.ID, self._page.get_title_id()), 'El slider no esta visible')
 
     def verify_text_title(self, expected_title):
-        self.verify_main_slider()
+        self.verify_main_title()
         assertions.assert_equal(expected_title, self.get_element(By.ID, self._page.get_title_id()).text,
                                 'El Texto no coincide')
