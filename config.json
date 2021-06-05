@@ -1,0 +1,21 @@
+{
+    "browser_name" : "firefox",
+    "path" : "./drivers/geckodriver.exe",
+    "url" : "https://www.demoblaze.com/",
+    "incognito" : true,
+    "headless" : {
+        "enabled" : false,
+        "resolution" : {
+            "width" : 800,
+            "height" : 600
+        }
+        
+    },
+    "page_load" : 20,
+    "implicit_wait": 5,
+    "explicit_waits" :{
+        "small":2,
+        "medium": 7,
+        "large" : 15
+    }
+}
